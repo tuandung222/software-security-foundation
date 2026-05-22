@@ -107,6 +107,11 @@ CLUSTERS: list[tuple[str, str, list[Path]]] = [
             "06-exercise-analysis.md",
         ]],
     ),
+    (
+        "Tóm tắt toàn khoá",
+        "course-summary-full.pdf",
+        [DOCS / "resources" / "course-summary.md"],
+    ),
 ]
 
 FRONT_MATTER_RE = re.compile(r"^---\n.*?\n---\n", re.DOTALL)
