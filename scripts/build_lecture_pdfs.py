@@ -84,6 +84,17 @@ CLUSTERS: list[tuple[str, str, list[Path]]] = [
             "05-enterprise-cloud.md",
         ]],
     ),
+    (
+        "Lecture 7 - Topics Bổ sung",
+        "lecture-7-additional-topics-full.pdf",
+        [DOCS / "06-additional-topics" / f for f in [
+            "01-overview.md",
+            "02-cryptography-basics.md",
+            "03-owasp-top-10.md",
+            "04-cbmc-tutorial.md",
+            "05-secure-sdlc.md",
+        ]],
+    ),
 ]
 
 FRONT_MATTER_RE = re.compile(r"^---\n.*?\n---\n", re.DOTALL)

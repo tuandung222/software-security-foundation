@@ -20,6 +20,7 @@ Các file PDF dưới đây gộp toàn bộ nội dung của mỗi cụm bài g
 | Lecture 4 | Static Analysis II (Concurrency) | [lecture-4-full.pdf](pathname:///pdfs/lectures/lecture-4-full.pdf) | ~190 KB |
 | Lecture 5 | Dynamic Analysis (Testing, Monitoring, Fuzzing) | [lecture-5-full.pdf](pathname:///pdfs/lectures/lecture-5-full.pdf) | ~199 KB |
 | Lecture 6 | Case Study (Tư vấn dự án thực) | [lecture-6-case-study-full.pdf](pathname:///pdfs/lectures/lecture-6-case-study-full.pdf) | ~127 KB |
+| Lecture 7 | Topics Bổ sung (Crypto, OWASP, CBMC, SDLC) | [lecture-7-additional-topics-full.pdf](pathname:///pdfs/lectures/lecture-7-additional-topics-full.pdf) | ~216 KB |
 
 ## Tham chiếu gốc
 

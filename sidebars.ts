@@ -78,6 +78,19 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Lecture 7: Topics Bổ sung',
+      link: {type: 'doc', id: '06-additional-topics/01-overview'},
+      collapsed: false,
+      items: [
+        '06-additional-topics/01-overview',
+        '06-additional-topics/02-cryptography-basics',
+        '06-additional-topics/03-owasp-top-10',
+        '06-additional-topics/04-cbmc-tutorial',
+        '06-additional-topics/05-secure-sdlc',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Bài tập (Exercises)',
       link: {type: 'doc', id: 'exercises/index'},
       collapsed: true,
