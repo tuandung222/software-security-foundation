@@ -296,7 +296,7 @@ Không exclusive. Tổ chức trưởng thành thường **kết hợp** cả 3:
 - SAMM assessment level 1.
 - SOC 2 readiness.
 
-Cost: $500-2000/month tool license.
+Cost: \$500-2000/month tool license.
 
 ### Enterprise (500+ người)
 
@@ -409,7 +409,7 @@ SDL trả lời "làm gì". SAMM trả lời "ở mức nào".
 - Annual security training cho mọi dev (KnowBe4 hoặc tương đương).
 
 **Tháng 2**: SAST + container scan.
-- SonarCloud (free cho open source, $10/month/dev cho private).
+- SonarCloud (free cho open source, \$10/month/dev cho private).
 - Trivy scan container trong CI.
 - Block PR merge nếu critical finding.
 
@@ -424,7 +424,7 @@ SDL trả lời "làm gì". SAMM trả lời "ở mức nào".
 - On-call rotation.
 
 **Tháng 5**: pen test + bug bounty.
-- Hire 3rd party pen test ($15-30K).
+- Hire 3rd party pen test (\$15-30K).
 - Setup HackerOne private program.
 
 **Tháng 6**: maturity check.

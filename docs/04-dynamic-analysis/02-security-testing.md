@@ -183,7 +183,7 @@ Không có oracle "đúng tuyệt đối" cho security testing, chỉ có heuris
 **Penetration testing**:
 - Manual hoặc semi-auto bởi expert.
 - Tìm bug bằng creative attack, có thể là bug mới.
-- Đắt (tester $200-500/giờ, project nhiều ngày).
+- Đắt (tester \$200-500/giờ, project nhiều ngày).
 - Tìm bug sâu, đặc biệt là chain attack (bug A leverage bug B).
 
 Best practice: scan trước (cheap, rộng), pen test sau (đắt, sâu) cho critical asset.

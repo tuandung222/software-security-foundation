@@ -185,8 +185,8 @@ Tool: OneTrust, ProcessUnity.
 **Compliance Certifications**:
 
 Tuỳ industry:
-- **SOC 2 Type 2**: 6 tháng observation period, $50-100K cost.
-- **ISO 27001**: international standard, $30-80K.
+- **SOC 2 Type 2**: 6 tháng observation period, \$50-100K cost.
+- **ISO 27001**: international standard, \$30-80K.
 - **GDPR**: nếu có EU user, designate DPO.
 - **HIPAA**: nếu xử lý health data.
 

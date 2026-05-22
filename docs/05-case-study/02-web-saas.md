@@ -14,7 +14,7 @@ description: "Tư vấn security cho startup web/SaaS, từ MVP launch tới sca
 Thông số:
 - 5 developer, 1 DevOps, không có security engineer.
 - Stack: React frontend, Node.js backend, PostgreSQL, deployed trên AWS.
-- 200 customer doanh nghiệp đang trả phí, tổng revenue $50K/month.
+- 200 customer doanh nghiệp đang trả phí, tổng revenue \$50K/month.
 - Đang trong vòng gọi vốn Series A.
 - Customer yêu cầu báo cáo security cho audit của họ.
 
@@ -118,14 +118,14 @@ Cover từng cái:
 **A10 SSRF**:
 - Backend không gọi URL từ user input. Nếu cần, whitelist domain.
 
-**Effort estimate**: 1 dev-month. Tool license: Auth0 ~$200/month, Dependabot free, AWS Security Hub ~$5/account/month.
+**Effort estimate**: 1 dev-month. Tool license: Auth0 ~\$200/month, Dependabot free, AWS Security Hub ~\$5/account/month.
 
 ### Phase 2 (Should-have, làm trong 3 tháng): Defense in depth
 
 **WAF (Web Application Firewall)**:
 - AWS WAF với managed rule (Core Rule Set, SQL Injection Rule, XSS Rule).
 - Block payload SQLi/XSS biết trước, giảm load lên app.
-- $5-10/month + rule cost.
+- \$5-10/month + rule cost.
 
 **Secrets Management**:
 - Không hard-code secret trong code/env file.
@@ -144,25 +144,25 @@ Cover từng cái:
 - CloudWatch alarm cho 5xx spike, login failure spike, slow query.
 - PagerDuty/Opsgenie cho on-call.
 
-**Effort estimate**: 1 dev-month. Tool cost: $100-300/month.
+**Effort estimate**: 1 dev-month. Tool cost: \$100-300/month.
 
 ### Phase 3 (Nice-to-have, làm trong 6 tháng): Audit-ready
 
 **SOC 2 Type 1 preparation**:
 - Document policy (access control, incident response, data retention).
-- Hire auditor (3-6 tháng process, $20-50K).
+- Hire auditor (3-6 tháng process, \$20-50K).
 
 **Penetration Test**:
 - Hire 3rd party pen tester (HackerOne, Cobalt).
-- 2 weeks engagement, $15-30K.
+- 2 weeks engagement, \$15-30K.
 - Fix findings critical/high, document.
 
 **Bug Bounty Program**:
 - Public program trên HackerOne (sau khi pen test xong).
-- Pay $500-5000 per bug tuỳ severity.
+- Pay \$500-5000 per bug tuỳ severity.
 - Incentivize community tìm bug 24/7.
 
-**Effort estimate**: nhiều dev-month + budget $50K+.
+**Effort estimate**: nhiều dev-month + budget \$50K+.
 
 ## Bước 4: Common Pitfalls
 
@@ -215,7 +215,7 @@ Solution: viết incident response playbook trước. Drill mỗi quý.
 
 ## Tóm tắt
 
-- Phase 1 (1 tháng, ~$200-500/month): cover OWASP Top 10.
+- Phase 1 (1 tháng, ~\$200-500/month): cover OWASP Top 10.
 - Phase 2 (3 tháng): defense in depth (WAF, secrets, scanning, monitoring).
 - Phase 3 (6 tháng+): audit-ready (SOC 2, pen test, bug bounty).
 - Tránh self-build auth, ignore CVE, secret leak, trust client.

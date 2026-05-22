@@ -14,7 +14,7 @@ description: "Tư vấn security cho fintech: PCI-DSS compliance, key management
 Thông số:
 - 30 developer, 5 security engineer (đã có).
 - Stack: React Native mobile, Go backend, PostgreSQL + Redis, deploy on prem + AWS hybrid.
-- 5 triệu user, $200M transaction/month.
+- 5 triệu user, \$200M transaction/month.
 - License **Tổ chức cung ứng dịch vụ trung gian thanh toán** từ NHNN.
 - Phải tuân thủ **PCI-DSS** (vì xử lý thẻ tín dụng/debit).
 
@@ -141,7 +141,7 @@ Implementation:
 Fraud detection là một ngành riêng. Cơ bản:
 
 **Rule-based**:
-- Transaction > $10K từ tài khoản mới → flag.
+- Transaction > \$10K từ tài khoản mới → flag.
 - 10 transaction trong 1 phút từ cùng IP → block.
 - Transaction từ device chưa từng dùng → require 2FA.
 
@@ -178,7 +178,7 @@ Insider có quyền access database, có thể:
 Mitigation:
 
 - **Least privilege**: developer không access production data. Read-only account cho debug.
-- **4-eye principle**: action sensitive (refund > $10K) cần 2 người approve.
+- **4-eye principle**: action sensitive (refund > \$10K) cần 2 người approve.
 - **Audit log everything**: mọi query database log với user ID, query text.
 - **Behavior analytics**: nhân viên access data ngoài giờ làm hoặc volume bất thường → alert.
 
@@ -188,7 +188,7 @@ Insider threat khó vì attacker biết internal. Combine technical control (lea
 
 ### Pitfall 1: Store CVV
 
-CVV/CVC chỉ dùng để verify transaction tại điểm authorization. Sau đó **bắt buộc** xoá. Store CVV = vi phạm PCI-DSS, fine $5K-100K/month.
+CVV/CVC chỉ dùng để verify transaction tại điểm authorization. Sau đó **bắt buộc** xoá. Store CVV = vi phạm PCI-DSS, fine \$5K-100K/month.
 
 ### Pitfall 2: Round error trong tính lãi/phí
 
