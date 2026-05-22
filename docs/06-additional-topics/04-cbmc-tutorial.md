@@ -491,8 +491,8 @@ Mỗi PR chạy CBMC tự động. Block merge nếu fail.
 Tải repo này về và thử CBMC trên các bài tập [Exercise Set 2](../exercises/exercise-set-2):
 
 ```bash
-git clone https://github.com/tuandung222/Temp1
-cd Temp1/exercises
+git clone https://github.com/tuandung222/software-security-foundation
+cd software-security-foundation/exercises
 # Copy code C từ bài tập vào file
 cbmc bai1.c --bounds-check --pointer-check
 ```

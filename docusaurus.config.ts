@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   url: 'https://tuandung222.github.io',
-  baseUrl: '/Temp1/',
+  baseUrl: '/software-security-foundation/',
 
   organizationName: 'tuandung222',
-  projectName: 'Temp1',
+  projectName: 'software-security-foundation',
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
@@ -58,7 +58,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: 'docs',
           editUrl:
-            'https://github.com/tuandung222/Temp1/edit/main/',
+            'https://github.com/tuandung222/software-security-foundation/edit/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           showLastUpdateTime: true,
@@ -114,7 +114,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/tuandung222/Temp1',
+          href: 'https://github.com/tuandung222/software-security-foundation',
           label: 'GitHub',
           position: 'right',
         },
@@ -149,7 +149,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub repo',
-              href: 'https://github.com/tuandung222/Temp1',
+              href: 'https://github.com/tuandung222/software-security-foundation',
             },
             {
               label: 'License (CC BY 4.0)',
