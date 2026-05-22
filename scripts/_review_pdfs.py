@@ -193,6 +193,75 @@ def _context(text: str, idx: int, length: int) -> str:
     return snippet.strip()
 
 
+def pdf_stats(pdf_path: Path) -> dict:
+    """Return structural stats: page count, image count + max dims, blank pages."""
+    pages = 0
+    images: list[tuple[int, float, float]] = []  # (page, w, h)
+    blank_pages: list[int] = []
+    very_short_pages: list[tuple[int, int]] = []  # (page, char_count)
+    text_chars = 0
+    for page_num, text, page_images in extract_text_and_images(pdf_path):
+        pages += 1
+        # Dedupe: same (page, w, h) often appears twice (LTImage + LTFigure container).
+        seen = set()
+        for w, h in page_images:
+            key = (page_num, round(w), round(h))
+            if key in seen:
+                continue
+            seen.add(key)
+            images.append((page_num, w, h))
+        text_chars += len(text)
+        s = len(text.strip())
+        if s == 0:
+            blank_pages.append(page_num)
+        elif s < 100:
+            very_short_pages.append((page_num, s))
+    return {
+        "pages": pages,
+        "images": images,
+        "blank_pages": blank_pages,
+        "very_short_pages": very_short_pages,
+        "text_chars": text_chars,
+    }
+
+
+def print_stats(pdf_stats_map: dict[str, dict]) -> None:
+    """Print structural stats table for all PDFs."""
+    print("\n## Structural Stats\n")
+    print("| PDF | Pages | Images | Total chars | Blank | Very-short |")
+    print("|---|---|---|---|---|---|")
+    for name, s in pdf_stats_map.items():
+        img_n = len(s["images"])
+        max_img_w = max((w for _, w, _ in s["images"]), default=0)
+        img_summary = f"{img_n}" + (f" (max W={max_img_w:.0f}pt)" if img_n else "")
+        blank = len(s["blank_pages"])
+        short = len(s["very_short_pages"])
+        print(f"| {name} | {s['pages']} | {img_summary} | {s['text_chars']:,} | {blank} | {short} |")
+
+    # Per-PDF detail for images that are suspiciously wide
+    print("\n### Images near or exceeding page content width\n")
+    suspicious_count = 0
+    for name, s in pdf_stats_map.items():
+        for page, w, h in s["images"]:
+            if w > PAGE_CONTENT_WIDTH * 0.9:
+                pct = w / PAGE_CONTENT_WIDTH * 100
+                marker = "**OVER**" if w > PAGE_CONTENT_WIDTH * 1.05 else "near"
+                print(f"- {name} p.{page}: {w:.0f} x {h:.0f}pt ({pct:.0f}% of content width) {marker}")
+                suspicious_count += 1
+    if suspicious_count == 0:
+        print("- (none - all images fit comfortably)")
+
+    # Blank or near-blank pages (potential layout bug)
+    print("\n### Pages with very little text\n")
+    short_count = 0
+    for name, s in pdf_stats_map.items():
+        for page, chars in s["very_short_pages"]:
+            print(f"- {name} p.{page}: only {chars} chars (likely TOC continuation or chapter break)")
+            short_count += 1
+    if short_count == 0:
+        print("- (none)")
+
+
 def report(pdf_findings: dict[str, dict[str, list[tuple[int, str]]]]) -> int:
     """Print markdown report. Return total issue count."""
     total = 0
@@ -245,16 +314,20 @@ def main() -> int:
     print(f"# Scanning {len(pdf_files)} PDF...", file=sys.stderr)
 
     all_findings: dict[str, dict] = {}
+    all_stats: dict[str, dict] = {}
     for pdf in pdf_files:
         print(f"  - {pdf.name}", file=sys.stderr)
         try:
             findings = scan_pdf(pdf)
+            stats = pdf_stats(pdf)
         except Exception as e:
             print(f"  ERROR scanning {pdf.name}: {e}", file=sys.stderr)
             continue
         all_findings[pdf.name] = findings
+        all_stats[pdf.name] = stats
 
     total = report(all_findings)
+    print_stats(all_stats)
     return 1 if total > 0 else 0
 
 
