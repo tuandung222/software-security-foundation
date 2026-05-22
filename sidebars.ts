@@ -94,6 +94,7 @@ const sidebars: SidebarsConfig = {
         'resources/pdfs',
         'resources/glossary',
         'resources/exam-checklist',
+        'resources/appendix-c-basics',
       ],
     },
   ],

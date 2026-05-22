@@ -16,4 +16,4 @@ Bộ bài tập đang được hoàn thiện. Hãy quay lại sau.
 
 ## Danh sách bộ bài tập
 
-- [Bộ 2: Phân tích code C tìm bug](./exercise-set-2)
+- [Bộ 2: Phân tích code C tìm bug](/docs/exercises/exercise-set-2)
