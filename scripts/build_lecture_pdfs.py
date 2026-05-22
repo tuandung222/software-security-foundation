@@ -108,12 +108,60 @@ def transform_admonitions(text: str) -> str:
     return ADMONITION_RE.sub(repl, text)
 
 
+MERMAID_PATTERN = re.compile(r"```mermaid\n(.*?)```", re.DOTALL)
+_MERMAID_TMPDIR: Path | None = None
+_MERMAID_COUNTER = [0]
+
+
+def _ensure_mermaid_tmpdir() -> Path:
+    global _MERMAID_TMPDIR
+    if _MERMAID_TMPDIR is None:
+        _MERMAID_TMPDIR = ROOT / "scripts" / "_tmp" / "mermaid_renders"
+        _MERMAID_TMPDIR.mkdir(parents=True, exist_ok=True)
+    return _MERMAID_TMPDIR
+
+
 def transform_mermaid(text: str) -> str:
-    """Pandoc + xelatex cannot render mermaid. Replace mermaid blocks with note."""
-    pattern = re.compile(r"```mermaid\n(.*?)```", re.DOTALL)
+    """Render mermaid blocks to PNG using mmdc, replace block with image ref.
+
+    Requires mmdc (@mermaid-js/mermaid-cli) installed. Falls back to a note if
+    rendering fails so the build still produces a PDF.
+    """
+    tmpdir = _ensure_mermaid_tmpdir()
+
     def repl(m: re.Match) -> str:
-        return "> *Sơ đồ Mermaid (xem trên web để hiển thị đầy đủ)*\n```\n" + m.group(1) + "```"
-    return pattern.sub(repl, text)
+        diagram = m.group(1).strip()
+        _MERMAID_COUNTER[0] += 1
+        idx = _MERMAID_COUNTER[0]
+        mmd_path = tmpdir / f"diagram_{idx:03d}.mmd"
+        png_path = tmpdir / f"diagram_{idx:03d}.png"
+        mmd_path.write_text(diagram, encoding="utf-8")
+        try:
+            subprocess.run(
+                [
+                    "npx",
+                    "mmdc",
+                    "-i", str(mmd_path),
+                    "-o", str(png_path),
+                    "-b", "white",
+                    "-w", "1400",
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+                cwd=ROOT,
+            )
+            if png_path.exists():
+                return f"\n\n![Sơ đồ {idx}]({png_path.as_posix()})\n\n"
+        except subprocess.CalledProcessError as e:
+            print(f"  WARN mermaid render failed for diagram {idx}: {e.stderr[:200]}", file=sys.stderr)
+        return (
+            "> *Sơ đồ Mermaid (không render được, xem trên web)*\n```\n"
+            + diagram
+            + "\n```"
+        )
+
+    return MERMAID_PATTERN.sub(repl, text)
 
 
 def transform_details(text: str) -> str:
@@ -180,6 +228,11 @@ def build_pdf(title: str, content: str, out_path: Path) -> None:
 
 def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    # Reset mermaid tmpdir each run to avoid stale renders
+    tmpdir = ROOT / "scripts" / "_tmp" / "mermaid_renders"
+    if tmpdir.exists():
+        for f in tmpdir.glob("*"):
+            f.unlink()
     for title, filename, files in CLUSTERS:
         content = prepare_markdown(files)
         out = OUT_DIR / filename

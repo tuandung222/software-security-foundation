@@ -11,6 +11,9 @@
 # Extracted PDF text (raw material, do not commit)
 /scripts/_extracted
 
+# Mermaid render temp dir
+/scripts/_tmp
+
 # IDE
 .idea/
 .vscode/
