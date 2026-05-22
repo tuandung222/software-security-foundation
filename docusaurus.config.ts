@@ -22,13 +22,19 @@ const config: Config = {
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'vi',
     locales: ['vi'],
     localeConfigs: {
       vi: {label: 'Tiếng Việt', htmlLang: 'vi-VN'},
+    },
+  },
+
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
     },
   },
 
@@ -56,6 +62,7 @@ const config: Config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           showLastUpdateTime: true,
+          numberPrefixParser: false,
         },
         blog: false,
         theme: {
@@ -153,12 +160,6 @@ const config: Config = {
     prism: {
       theme: prismThemes.oneLight,
       darkTheme: prismThemes.oneDark,
-      additionalLanguages: ['c', 'cpp', 'bash', 'sql', 'python', 'java', 'json'],
-    },
-  } satisfies Preset.ThemeConfig,
-};
-
-export default config;
       additionalLanguages: ['c', 'cpp', 'bash', 'sql', 'python', 'java', 'json'],
     },
   } satisfies Preset.ThemeConfig,
