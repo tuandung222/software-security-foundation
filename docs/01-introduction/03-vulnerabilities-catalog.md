@@ -40,7 +40,7 @@ Tóm tắt bằng bảng:
 
 Cùng một bug có thể được phân loại khác nhau tuỳ ngữ cảnh. Ví dụ thiếu rate limit khi check OTP: nếu OTP là 6 số, attacker brute force 10^6 lần trong vài giây và đoán được. Bạn có thể gọi đây là implementation bug (thiếu `if (attempts > 5) ban`) hoặc design bug (thiếu rate limiting layer). Cả hai cách phân loại đều dẫn tới cách sửa khác nhau: implementation thì thêm `if`, design thì đặt một Redis-based rate limiter trước endpoint.
 
-:::warning Bài học thực tế
+:::warning[Bài học thực tế]
 Một sự thật khó chịu: **chỉ implementation bug mới tự động phát hiện được**. Một static analyser dù mạnh đến đâu cũng không "biết" rằng dùng MD5 cho password là sai, vì nó không có khái niệm "password phải khó brute force". Việc phát hiện design bug đòi hỏi con người và quy trình (threat model, security review, pen test). Vì thế, tài liệu này tập trung implementation: đây là phần **kỹ thuật có thể formalize**.
 :::
 
@@ -125,7 +125,7 @@ Hệ quả là sau 50 năm, ngành phải xây hàng loạt **lớp phòng vệ*
 
 Trong các lớp trên, **memory-safe language là giải pháp triệt để**. Microsoft công bố năm 2019 rằng 70% CVE của họ trong 12 năm qua là memory safety bug, và đó là lý do Microsoft chuyển dần Windows kernel sang Rust. Google công bố tương tự với Android.
 
-:::tip Phân biệt strcpy, strncpy, strlcpy
+:::tip[Phân biệt strcpy, strncpy, strlcpy]
 Ba hàm tên giống nhau nhưng hành vi khác nhau, gây nhầm lẫn rất nhiều:
 
 - `strcpy(dst, src)`: nguy hiểm, không bounds check. **Đừng dùng**.

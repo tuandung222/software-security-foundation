@@ -75,7 +75,7 @@ Tìm $x, y \geq 0$ thoả $x + y = 100$ và $x - y < 10$. Solver dùng thuật t
 
 LIA decidable nhưng tốn kém hơn LRA (do constraint nguyên). LRA decidable polynomial time với simplex.
 
-:::warning Linear vs Non-linear
+:::warning[Linear vs Non-linear]
 "Linear" rất quan trọng. `(= z (* 2 x))` là linear (nhân với hằng số 2). `(= z (* x y))` là **non-linear** (nhân hai biến). Non-linear integer arithmetic (NIA) là **undecidable** (Matiyasevich, 1970). Tool SMT có thể "thử" giải NIA nhưng không guarantee.
 :::
 

@@ -10,7 +10,7 @@ description: Bộ bài tập thực hành đi kèm tài liệu, có lời giải
 
 Trang này tập hợp các bài tập đi kèm tài liệu, có kèm lời giải chi tiết để bạn tự kiểm tra.
 
-:::info Đang biên soạn
+:::info[Đang biên soạn]
 Bộ bài tập đang được hoàn thiện. Hãy quay lại sau.
 :::
 

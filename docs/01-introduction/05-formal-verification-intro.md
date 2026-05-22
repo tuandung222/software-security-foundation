@@ -59,7 +59,7 @@ Trong ngôn ngữ logic thời gian LTL (Linear Temporal Logic), safety viết l
 
 Trong LTL, liveness viết là $F \phi$, "finally $\phi$", "rồi $\phi$ sẽ đúng".
 
-:::tip Mẹo phân biệt
+:::tip[Mẹo phân biệt]
 Một cách dễ nhớ. Hỏi: "Tôi cần xem trace bao lâu để phát hiện vi phạm?"
 
 - Nếu trace **hữu hạn** đã đủ, đó là **safety**. Ví dụ: ngay khi gặp một `div(x, 0)`, ta biết property "không chia cho 0" bị vi phạm.
@@ -105,7 +105,7 @@ Bảng dưới đây cho thấy các tool phổ biến đánh đổi như thế 
 | Symbolic Execution (KLEE) | Sound nếu khám phá hết | Không (path explosion) | Cắt path bằng heuristic |
 | Linter (Coverity, Infer) | Không | Không | Heuristic, nhanh, nhưng có thể miss và có thể nhầm |
 
-:::warning Khi nào cần sound, khi nào không?
+:::warning[Khi nào cần sound, khi nào không?]
 Trong **safety-critical** (avionics, medical, automotive, nuclear), bắt buộc tool phải **sound**. Một tool unsound nói "OK" rồi máy bay rơi là không chấp nhận được. Ngành avionics dùng Astrée để verify code của Airbus A380, mức độ tin cậy cực cao.
 
 Trong **web/app thông thường**, có thể chấp nhận tool unsound (như Coverity, Infer của Facebook) miễn là tỷ lệ false positive thấp và bắt được phần lớn bug. Đánh đổi là về scale: tool sound chạy chậm, unsound chạy nhanh và scale tới triệu dòng code.

@@ -335,7 +335,7 @@ $x_1 = $ `0x80000000`, tức `INT_MIN = -2^31`. Khi `abs(INT_MIN)` chạy, branc
 
 Đây không phải bug do tool BMC bịa ra. Đây là **bug thật của hàm `abs` trong C**, được ghi rõ trong man page là Undefined Behavior với input `INT_MIN`. Hàm `abs` trong glibc trả về `INT_MIN` (số âm) cho input `INT_MIN`. BMC bắt được bug này một cách tự động trong vài mili giây, trong khi testing có thể không bao giờ thấy nếu không nghĩ ra input cụ thể đó.
 
-:::tip Bài học lớn
+:::tip[Bài học lớn]
 Hai bài học rút ra từ ví dụ trên:
 
 1. **Encoding đúng theory quan trọng**. Int và Bitvector cho kết quả khác nhau với cùng chương trình. Việc lựa chọn này ảnh hưởng trực tiếp tới tính đúng đắn của verification.

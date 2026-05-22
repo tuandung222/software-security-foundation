@@ -51,7 +51,7 @@ Trong thực tế, ta phân biệt hai mức Integrity:
 
 **System integrity** rộng hơn: nó nói về **hành vi của chương trình** có đúng đặc tả không. Một bug trong chương trình tính lãi ngân hàng làm số tiền sai cũng là vi phạm system integrity, dù không có ai cố tình sửa data. Và đây chính là phần mà BMC và testing đảm bảo: bằng cách kiểm tra mọi execution của chương trình tuân theo đặc tả.
 
-:::tip Phép loại suy
+:::tip[Phép loại suy]
 Hình dung Confidentiality như niêm phong một bức thư trong phong bì có dấu đỏ: người ngoài không thấy nội dung. Integrity là dấu đỏ đó: nếu ai mở thư, dấu vỡ và người nhận biết. Bạn có thể có Integrity mà không cần Confidentiality (gửi tin nhắn công khai nhưng ký số), hoặc Confidentiality mà không Integrity (mã hoá nhưng không ký). Hai thuộc tính tách biệt và thường cần cả hai cùng lúc.
 :::
 

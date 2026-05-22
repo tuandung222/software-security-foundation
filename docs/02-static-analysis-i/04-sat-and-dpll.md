@@ -51,7 +51,7 @@ $$\phi = (x_1 \lor \neg x_2 \lor x_3) \land (\neg x_1 \lor x_4) \land (x_2 \lor 
 
 Vì sao CNF? Vì nó có cấu trúc đều đặn, dễ implement thuật toán. Mọi công thức boolean đều có thể chuyển sang CNF bằng quy trình **Tseitin transformation** (nhanh, kích thước tăng tuyến tính).
 
-:::tip Phép loại suy CNF
+:::tip[Phép loại suy CNF]
 Hãy hình dung CNF như một danh sách yêu cầu. Mỗi clause là một yêu cầu mà ít nhất một literal trong đó phải đúng. Cả công thức đúng khi mọi yêu cầu được thoả.
 
 Ví dụ "Tôi muốn một laptop có (Mac OR Linux) AND (≥ 16 GB RAM) AND (≥ 512 GB SSD)" là CNF với 3 clause. Một laptop chỉ "OK" khi thoả cả 3 clause.
@@ -219,7 +219,7 @@ Câu trả lời nằm ở hai sự thật:
 
 Một analogy hữu ích: tìm kim trong đống cỏ. Brute force là sờ từng cọng. CDCL là: mỗi lần sờ trúng "phần không có kim", ghi nhớ và không bao giờ sờ vào phần đó nữa. Sau một triệu lần ghi nhớ, vùng phải tìm thu hẹp rất nhiều.
 
-:::tip Vì sao SAT competition quan trọng?
+:::tip[Vì sao SAT competition quan trọng?]
 Mỗi năm, cộng đồng tổ chức **SAT Competition**: các solver thi giải cùng tập benchmark. Solver thắng cuộc thường được integrate vào BMC tool (CBMC, ESBMC) trong năm sau. Hiện tại (2024), các solver hàng đầu gồm Kissat, CaDiCaL, MapleSAT.
 
 Nhờ cạnh tranh này, hiệu năng SAT solver tăng đều đặn ~2x mỗi vài năm trong 20 năm qua. Một benchmark "khó" của 2004 giờ giải được trong vài mili giây.

@@ -54,7 +54,7 @@ Có một điểm rất quan trọng cần làm rõ vì sinh viên hay nhầm: *
 
 Sự phân biệt này quan trọng vì cách phòng tránh khác nhau. Để chống lỗi ngẫu nhiên, ta dùng kỹ thuật như redundancy (ECC RAM), error-correcting code, replication. Để chống kẻ tấn công, ta dùng kỹ thuật như input validation, sandboxing, cryptography. Một bug có thể vi phạm **cả hai cùng lúc**: buffer overflow trong xe tự lái vừa là safety hazard (gây tai nạn ngẫu nhiên do bit lật) vừa là security vulnerability (kẻ tấn công gửi gói tin được chế để gây tai nạn cố ý).
 
-:::tip Phép loại suy
+:::tip[Phép loại suy]
 Hãy hình dung Safety và Security qua một toà nhà. Safety lo về việc xây dựng vững chắc, có hệ thống báo cháy, có lối thoát hiểm: chống lại hoả hoạn ngẫu nhiên hay động đất. Security lo về khoá cửa, camera, bảo vệ: chống lại trộm có ý đồ. Một viên gạch lung lay vừa nguy hiểm cho người đi qua (safety) vừa có thể bị kẻ trộm dùng để leo vào (security).
 :::
 

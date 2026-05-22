@@ -127,7 +127,7 @@ Bảng tóm tắt (cho $w$-bit BV):
 
 Với $w = 32$, phép nhân tạo ~1000 biến và clause. Phép chia ~3000-5000. Một formula có vài chục phép nhân, vài chục bitvector variable đã có hàng triệu clause. SAT solver hiện đại vẫn xử lý được trong giây hoặc phút.
 
-:::warning Nhân là phép đắt nhất
+:::warning[Nhân là phép đắt nhất]
 Khi BMC formula chứa nhiều phép nhân (ví dụ verify code crypto, hash function), tốc độ giảm mạnh. Một số tool có heuristic không bit-blast nhân, mà dùng abstraction (treat như uninterpreted function), check post-hoc với mô hình cụ thể.
 :::
 
