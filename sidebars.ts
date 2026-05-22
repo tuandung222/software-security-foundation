@@ -91,6 +91,20 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Lecture 8: Phân tích Code C/C++',
+      link: {type: 'doc', id: '07-code-analysis/01-overview'},
+      collapsed: false,
+      items: [
+        '07-code-analysis/01-overview',
+        '07-code-analysis/02-code-patterns-cluster-1',
+        '07-code-analysis/03-code-patterns-cluster-2',
+        '07-code-analysis/04-code-patterns-cluster-3',
+        '07-code-analysis/05-code-patterns-cluster-4',
+        '07-code-analysis/06-exercise-analysis',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Bài tập (Exercises)',
       link: {type: 'doc', id: 'exercises/index'},
       collapsed: true,

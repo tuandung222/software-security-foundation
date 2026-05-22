@@ -108,6 +108,13 @@ function LectureGrid(): ReactNode {
             to="/docs/06-additional-topics/01-overview"
             status="ready"
           />
+          <LectureCard
+            number="07"
+            title="Phân tích Code C/C++"
+            description="Đọc lại 39 code pattern từ Lec 1-5 và exercise: chỉ ra bug, giải thích cơ chế, fix với CBMC/ASan/MSan/TSan, CWE và CVSS classification."
+            to="/docs/07-code-analysis/01-overview"
+            status="ready"
+          />
         </div>
       </div>
     </section>

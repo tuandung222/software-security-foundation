@@ -133,6 +133,7 @@ const config: Config = {
             {label: 'Lecture 5', to: '/docs/04-dynamic-analysis/01-overview'},
             {label: 'Case Study', to: '/docs/05-case-study/01-overview'},
             {label: 'Topics Bổ sung', to: '/docs/06-additional-topics/01-overview'},
+            {label: 'Phân tích Code', to: '/docs/07-code-analysis/01-overview'},
           ],
         },
         {

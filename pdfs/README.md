@@ -14,6 +14,7 @@ Sinh tự động từ markdown source qua `pandoc + xelatex`. Có mục lục, 
 | [`lecture-5-full.pdf`](./lecture-5-full.pdf) | Lecture 5: Dynamic Analysis (Fuzzing) | ~199 KB |
 | [`lecture-6-case-study-full.pdf`](./lecture-6-case-study-full.pdf) | Lecture 6: Case Study (Tư vấn dự án) | ~127 KB |
 | [`lecture-7-additional-topics-full.pdf`](./lecture-7-additional-topics-full.pdf) | Lecture 7: Topics Bổ sung (Crypto, OWASP, CBMC, SDLC) | ~216 KB |
+| [`lecture-8-code-analysis-full.pdf`](./lecture-8-code-analysis-full.pdf) | Lecture 8: Phân tích Code C/C++ (39 pattern + CWE + tool) | ~245 KB |
 
 ## PDF slide gốc (tham chiếu hình ảnh)
 

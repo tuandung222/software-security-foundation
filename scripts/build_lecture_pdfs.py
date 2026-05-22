@@ -95,6 +95,18 @@ CLUSTERS: list[tuple[str, str, list[Path]]] = [
             "05-secure-sdlc.md",
         ]],
     ),
+    (
+        "Lecture 8 - Phân tích Code C C++",
+        "lecture-8-code-analysis-full.pdf",
+        [DOCS / "07-code-analysis" / f for f in [
+            "01-overview.md",
+            "02-code-patterns-cluster-1.md",
+            "03-code-patterns-cluster-2.md",
+            "04-code-patterns-cluster-3.md",
+            "05-code-patterns-cluster-4.md",
+            "06-exercise-analysis.md",
+        ]],
+    ),
 ]
 
 FRONT_MATTER_RE = re.compile(r"^---\n.*?\n---\n", re.DOTALL)
