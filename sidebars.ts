@@ -65,6 +65,19 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Lecture 6: Case Study (Tư vấn dự án)',
+      link: {type: 'doc', id: '05-case-study/01-overview'},
+      collapsed: false,
+      items: [
+        '05-case-study/01-overview',
+        '05-case-study/02-web-saas',
+        '05-case-study/03-fintech',
+        '05-case-study/04-iot',
+        '05-case-study/05-enterprise-cloud',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Bài tập (Exercises)',
       link: {type: 'doc', id: 'exercises/index'},
       collapsed: true,

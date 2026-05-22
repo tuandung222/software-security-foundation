@@ -131,6 +131,7 @@ const config: Config = {
             {label: 'Lecture 3', to: '/docs/02-static-analysis-i/01-overview'},
             {label: 'Lecture 4', to: '/docs/03-static-analysis-ii/01-overview'},
             {label: 'Lecture 5', to: '/docs/04-dynamic-analysis/01-overview'},
+            {label: 'Case Study', to: '/docs/05-case-study/01-overview'},
           ],
         },
         {
