@@ -233,14 +233,17 @@ def build_pdf(title: str, content: str, out_path: Path) -> None:
     header = f"---\ntitle: \"{title}\"\nlang: vi-VN\ngeometry: margin=2cm\nfontsize: 11pt\n---\n\n"
     tmp_md.write_text(header + content, encoding="utf-8")
 
-    # Use xelatex for Unicode; main font defaults to system if specified font missing.
+    # Use xelatex for Unicode. Monaco (macOS) has full Vietnamese diacritic
+    # coverage including stacked marks like ế, ả, ỗ which Menlo's macOS
+    # variant is missing. Helvetica handles body text fine.
     cmd = [
         "pandoc",
         str(tmp_md),
         "-o", str(out_path),
         "--pdf-engine=xelatex",
         "-V", "mainfont=Helvetica",
-        "-V", "monofont=Menlo",
+        "-V", "monofont=Monaco",
+        "-V", "monofontoptions=Scale=0.82",
         "-V", "colorlinks=true",
         "-V", "linkcolor=blue",
         "--toc",
