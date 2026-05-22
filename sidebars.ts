@@ -39,6 +39,12 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         '03-static-analysis-ii/01-overview',
+        '03-static-analysis-ii/02-loop-unwinding-and-safety',
+        '03-static-analysis-ii/03-bit-blasting-and-arrays',
+        '03-static-analysis-ii/04-concurrency-verification',
+        '03-static-analysis-ii/05-context-bounded-analysis',
+        '03-static-analysis-ii/06-lazy-vs-schedule-recording',
+        '03-static-analysis-ii/07-sequentialization-kiss-lr',
       ],
     },
     {
