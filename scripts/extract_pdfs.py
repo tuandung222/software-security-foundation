@@ -12,7 +12,7 @@ from pathlib import Path
 import pdfplumber
 
 ROOT = Path(__file__).resolve().parent.parent
-PDF_DIR = ROOT / "static" / "pdfs"
+PDF_DIR = ROOT / "pdfs" / "archive"
 OUT_DIR = ROOT / "scripts" / "_extracted"
 
 

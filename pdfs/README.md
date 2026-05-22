@@ -16,17 +16,9 @@ Sinh tự động từ markdown source qua `pandoc + xelatex`. Có mục lục, 
 | [`lecture-7-additional-topics-full.pdf`](./lecture-7-additional-topics-full.pdf) | Lecture 7: Topics Bổ sung (Crypto, OWASP, CBMC, SDLC) | ~216 KB |
 | [`lecture-8-code-analysis-full.pdf`](./lecture-8-code-analysis-full.pdf) | Lecture 8: Phân tích Code C/C++ (39 pattern + CWE + tool) | ~245 KB |
 
-## PDF slide gốc (tham chiếu hình ảnh)
+## `archive/` (tham chiếu nội bộ)
 
-Slide gốc có hình ảnh, sơ đồ trực quan.
-
-| File | Cụm | Kích thước |
-|---|---|---|
-| [`lecture-1-2.pdf`](./lecture-1-2.pdf) | Lecture 1 & 2 (slide) | 8.9 MB |
-| [`lecture-3.pdf`](./lecture-3.pdf) | Lecture 3 (slide) | 9.1 MB |
-| [`lecture-4.pdf`](./lecture-4.pdf) | Lecture 4 (slide) | 4.7 MB |
-| [`lecture-5.pdf`](./lecture-5.pdf) | Lecture 5 (slide) | 3.7 MB |
-| [`exercises-set-2.pdf`](./exercises-set-2.pdf) | Bài tập | 152 KB |
+Thư mục `archive/` chứa các PDF tham chiếu nội bộ (không xuất bản lên website). Chỉ dùng cho mục đích lưu trữ.
 
 ## Download tất cả
 

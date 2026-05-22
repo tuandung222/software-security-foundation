@@ -23,18 +23,6 @@ Các file PDF dưới đây gộp toàn bộ nội dung của mỗi cụm bài g
 | Lecture 7 | Topics Bổ sung (Crypto, OWASP, CBMC, SDLC) | [lecture-7-additional-topics-full.pdf](pathname:///pdfs/lectures/lecture-7-additional-topics-full.pdf) | ~216 KB |
 | Lecture 8 | Phân tích Code C/C++ (39 pattern + CWE + tool) | [lecture-8-code-analysis-full.pdf](pathname:///pdfs/lectures/lecture-8-code-analysis-full.pdf) | ~245 KB |
 
-## Tham chiếu gốc
-
-Các file PDF gốc đính kèm để xem hình ảnh slide, sơ đồ trực quan.
-
-| Cụm | File | Kích thước |
-|---|---|---|
-| Lecture 1 & 2 (slide) | [lecture-1-2.pdf](pathname:///pdfs/lecture-1-2.pdf) | 8.9 MB |
-| Lecture 3 (slide) | [lecture-3.pdf](pathname:///pdfs/lecture-3.pdf) | 9.1 MB |
-| Lecture 4 (slide) | [lecture-4.pdf](pathname:///pdfs/lecture-4.pdf) | 4.7 MB |
-| Lecture 5 (slide) | [lecture-5.pdf](pathname:///pdfs/lecture-5.pdf) | 3.7 MB |
-| Bài tập (slide) | [exercises-set-2.pdf](pathname:///pdfs/exercises-set-2.pdf) | 152 KB |
-
 ## Cách build PDF từ source
 
 Nếu bạn fork repo và muốn rebuild PDF từ markdown source:
