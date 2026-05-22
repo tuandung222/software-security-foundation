@@ -54,6 +54,9 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         '04-dynamic-analysis/01-overview',
+        '04-dynamic-analysis/02-security-testing',
+        '04-dynamic-analysis/03-coverage-criteria',
+        '04-dynamic-analysis/04-monitoring-ltl-buchi',
       ],
     },
     {
