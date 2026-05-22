@@ -1,0 +1,70 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+:root {
+  --ifm-color-primary: #1e40af;
+  --ifm-color-primary-dark: #1d3a9d;
+  --ifm-color-primary-darker: #1b3793;
+  --ifm-color-primary-darkest: #162d79;
+  --ifm-color-primary-light: #2147c1;
+  --ifm-color-primary-lighter: #234bca;
+  --ifm-color-primary-lightest: #3e60d2;
+  --ifm-code-font-size: 92%;
+  --ifm-heading-line-height: 1.3;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #4b96f8;
+  --ifm-color-primary-darker: #408ef7;
+  --ifm-color-primary-darkest: #1976f4;
+  --ifm-color-primary-light: #75b4fc;
+  --ifm-color-primary-lighter: #80bcfd;
+  --ifm-color-primary-lightest: #a5d0fe;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+}
+
+/* Tăng độ rộng nội dung để bảng và sơ đồ thoáng hơn */
+.markdown {
+  max-width: 920px;
+}
+
+/* Định dạng callout đẹp hơn cho admonition */
+.theme-admonition {
+  border-radius: 8px;
+}
+
+/* Code block nhìn rõ hơn */
+.theme-code-block {
+  font-size: 0.92em;
+}
+
+/* KaTeX scroll horizontally trên màn hình hẹp */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25em 0;
+}
+
+/* Mini-quiz: details/summary styling */
+details {
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin: 1rem 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+details[open] > summary {
+  margin-bottom: 0.8rem;
+}
