@@ -57,6 +57,10 @@ const sidebars: SidebarsConfig = {
         '04-dynamic-analysis/02-security-testing',
         '04-dynamic-analysis/03-coverage-criteria',
         '04-dynamic-analysis/04-monitoring-ltl-buchi',
+        '04-dynamic-analysis/05-fuzzing-basics',
+        '04-dynamic-analysis/06-blackbox-grammar-mutation',
+        '04-dynamic-analysis/07-whitebox-fuzzing-symbolic',
+        '04-dynamic-analysis/08-bmc-for-test-generation',
       ],
     },
     {
