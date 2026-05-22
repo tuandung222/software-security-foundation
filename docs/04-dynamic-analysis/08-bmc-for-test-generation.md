@@ -323,6 +323,10 @@ Test này cover branch A. Combined với test cho branch không đến A (ví d�
 Trong industry: Google ClusterFuzz dùng fuzzer chính, plus seed corpus từ symbolic exec. Microsoft SAGE dùng cả hai. Modern fuzzing không là "AFL alone", là một orchestration of multiple techniques.
 </details>
 
+:::tip[DS perspective]
+BMC-for-test-gen tương tự **active learning với query strategy "maximum disagreement"** - chọn input mà model uncertain nhất (high entropy). Ở đây "uncertain" = chưa cover branch. **CEGAR loop** (counterexample-guided abstraction refinement) ≈ **iterative active learning loop**: query input mới khi gặp gap. Combine BMC + fuzzing (Driller) ≈ **hybrid sampling strategy**: solver giải "hard constraint" (analog của ill-conditioned region), fuzzer cover "easy region" nhanh. Cùng triết lý: smart probe cho hard case, brute force cho easy case.
+:::
+
 ---
 
 **Kết thúc Cụm 4 (Lecture 5).** Bạn đã hoàn thành toàn bộ chương trình kỹ thuật! Từ khái niệm cơ bản Software Security (Cụm 1), tới BMC + SMT cho sequential (Cụm 2), concurrency (Cụm 3), dynamic analysis với fuzzing (Cụm 4). Để thấy các kỹ thuật này áp dụng vào tư vấn dự án thực tế, đọc tiếp [Cụm 5: Case Studies](../05-case-study/01-overview).

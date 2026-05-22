@@ -185,6 +185,10 @@ Cần **GUI-aware fuzzer**: hiểu DOM/widget tree, biết click vào button nà
 Trong web context: **Burp Suite** + custom extension có thể "fuzz form" theo flow login → action → submit. Tốt hơn random nhưng vẫn không gần độ hiệu quả của file format fuzzing.
 </details>
 
+:::tip[DS perspective]
+Fuzzing **chính là** adversarial example search nhưng cho bug thay vì cho misclassification. **Seed corpus** ≈ training data, **mutation strategy** ≈ data augmentation (flip, rotate, noise). **Coverage-guided fuzzing** (AFL) ≈ **active learning** - chọn input most informative (cover code mới). **AFL energy schedule** ≈ **curriculum learning**. **Crash** ≈ misclassification, **counterexample** ≈ adversarial example. Nếu bạn từng dùng `cleverhans` hay `foolbox` cho adversarial ML, fuzzing intuitive ngay - cùng là "search trong input space để tìm fail mode".
+:::
+
 ---
 
 **Tiếp theo**: [5.6 Black-box fuzzing (AFL, grammar, mutation)](./06-blackbox-grammar-mutation)

@@ -108,6 +108,8 @@ const sidebars: SidebarsConfig = {
         'resources/glossary',
         'resources/exam-checklist',
         'resources/appendix-c-basics',
+        'resources/ds-perspective',
+        'resources/cross-reference',
       ],
     },
   ],

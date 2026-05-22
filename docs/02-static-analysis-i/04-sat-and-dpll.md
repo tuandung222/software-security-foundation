@@ -280,6 +280,10 @@ CDCL phân tích conflict và xác định **tầng decision cao nhất trong co
 Ví dụ: conflict ở tầng 100, conflict set chỉ có decision ở tầng 5 và 80. Chronological: backtrack 100 → 99 → 98 → ... mỗi lần lại bị mâu thuẫn. Non-chronological: nhảy thẳng từ 100 về 80, cùng với clause học được đảm bảo không lặp lại conflict.
 </details>
 
+:::tip[DS perspective]
+SAT là **Constraint Satisfaction Problem** (CSP) ở dạng thuần boolean, tương đương việc giải Sudoku hay scheduling. DPLL chính là **backtracking search** quen thuộc, CDCL nâng lên thành **branch-and-bound** giống MILP solver. **Unit propagation** ≈ **constraint propagation (AC-3)** trong CSP. **VSIDS heuristic** ≈ **variable importance** trong feature selection. Nếu bạn quen `cvxpy` hay `pulp`, SMT solver là cùng triết lý: model bài toán dưới dạng constraint, để solver lo phần combinatorial.
+:::
+
 ---
 
 **Tiếp theo**: [3.5 SMT theories](./05-smt-theories)

@@ -406,6 +406,10 @@ Branch trở thành phép `ite` (if-then-else) trên SSA name. Đây là dạng 
 CBMC và ESBMC mặc định dùng BitVec cho C, đó là lựa chọn đúng cho production. Chi tiết encoding ở [Lecture 3 bài 6](../02-static-analysis-i/06-encoding-numbers-and-floats).
 </details>
 
+:::tip[DS perspective]
+BMC dịch chương trình thành **một công thức SMT lớn** giống cách PyTorch/TensorFlow build computational graph rồi compute - bạn unroll RNN qua $T$ timestep tạo một graph khổng lồ rồi `loss.backward()`. SAT/SMT solver search assignment thoả constraint = optimizer search input minimizing loss. Counterexample của BMC chính là **adversarial example** trong ML - input nhỏ làm output sai property. Xem [DS perspective appendix](../resources/ds-perspective) cho bảng đối chiếu đầy đủ.
+:::
+
 ---
 
 **Kết thúc Cụm 1 (Lecture 1-2).** Bạn đã có nền tảng vocabulary đầy đủ về Software Security, các lớp lỗ hổng phổ biến, khái niệm formal verification, và cách BMC + SMT hoạt động. Chuyển sang [Lecture 3: Static Analysis I (BMC chi tiết)](../02-static-analysis-i/01-overview) để xem từng kỹ thuật được hiện thực ra sao trong các tool hiện đại.

@@ -291,6 +291,10 @@ Truth table:
 Test set: T3, T4, T5, T7. **4 test** cho 3 sub-condition. Đúng $n + 1$.
 </details>
 
+:::tip[DS perspective]
+Coverage criteria trong testing trả lời "tôi đã test bao nhiêu phần code?" giống **k-fold cross-validation** trả lời "tôi đã đánh giá trên bao nhiêu phần data?". MC/DC đặc biệt giống **factorial design** trong DOE / ANOVA: với $n$ binary feature, cần $\geq n+1$ test để cover mọi pair interaction. **Branch coverage** ≈ **stratified sampling** (mỗi class được cover). **Uncovered branch** ≈ **underrepresented subgroup** trong training set - cùng là red flag về data/test quality. Nếu bạn từng tune model với stratified k-fold, bạn đã có instinct về MC/DC.
+:::
+
 ---
 
 **Tiếp theo**: [5.4 Monitoring với LTL và Büchi automata](./04-monitoring-ltl-buchi)
