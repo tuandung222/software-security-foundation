@@ -402,7 +402,7 @@ jq '.[] | select(.result == "FAILURE")' result.json
 
 | Tiêu chí | CBMC | ESBMC |
 |---|---|---|
-| Maintainer | Diffblue + community | Federal University of Amazonas + Manchester |
+| Maintainer | Diffblue + community | Academic community (multi-institution) |
 | Backend SAT/SMT | MiniSat (default), CaDiCaL, Z3 | Z3, Boolector, CVC4, Yices |
 | Concurrency | --pthread, basic | mature, multiple memory model |
 | Float | --floatbv | mature FP support |
