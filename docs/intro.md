@@ -20,15 +20,15 @@ Vấn đề chung của các vụ trên không phải là kỹ năng coder kém,
 
 ## Bạn sẽ học được gì?
 
-Tài liệu chia thành bốn cụm bài giảng nối tiếp nhau. Mỗi cụm trả lời một câu hỏi lớn:
+Tài liệu chia thành bốn phần bài giảng nối tiếp nhau. Mỗi phần trả lời một câu hỏi lớn:
 
-**Cụm 1 (Lecture 1-2): Software Security là gì và lỗ hổng đến từ đâu?** Bạn sẽ hiểu khái niệm CIA Triad, phân biệt nó với Cryptography, đi qua các lớp lỗ hổng kinh điển (buffer overflow, integer overflow, race condition, SQL injection, XSS, XXE), và lần đầu gặp ý tưởng dùng logic toán để **chứng minh** một chương trình không có một lớp lỗi nào đó.
+**Phần 1 (Lecture 1-2): Software Security là gì và lỗ hổng đến từ đâu?** Bạn sẽ hiểu khái niệm CIA Triad, phân biệt nó với Cryptography, đi qua các lớp lỗ hổng kinh điển (buffer overflow, integer overflow, race condition, SQL injection, XSS, XXE), và lần đầu gặp ý tưởng dùng logic toán để **chứng minh** một chương trình không có một lớp lỗi nào đó.
 
-**Cụm 2 (Lecture 3): Làm thế nào kiểm tra một chương trình tuần tự bằng máy?** Đây là phần đi sâu vào *Bounded Model Checking* và *SMT solver*. Bạn sẽ thấy cách một chương trình C được dịch thành công thức logic, và làm thế nào một solver như Z3 quyết định công thức đó có thể thoả hay không. Phần encoding số nguyên, số dấu phẩy động và con trỏ sẽ giải thích vì sao tool như CBMC, ESBMC bắt được những bug mà mắt người gần như không thể thấy.
+**Phần 2 (Lecture 3): Làm thế nào kiểm tra một chương trình tuần tự bằng máy?** Đây là phần đi sâu vào *Bounded Model Checking* và *SMT solver*. Bạn sẽ thấy cách một chương trình C được dịch thành công thức logic, và làm thế nào một solver như Z3 quyết định công thức đó có thể thoả hay không. Phần encoding số nguyên, số dấu phẩy động và con trỏ sẽ giải thích vì sao tool như CBMC, ESBMC bắt được những bug mà mắt người gần như không thể thấy.
 
-**Cụm 3 (Lecture 4): Làm thế nào kiểm tra một chương trình đa luồng?** Khi nhiều thread chạy song song, không gian state nổ tung. Bạn sẽ học các kỹ thuật giảm không gian này (*context-bounded analysis*, *lazy exploration*, *schedule recording*) và cách dịch chương trình đa luồng về chương trình tuần tự để dùng lại tools của Cụm 2 (*sequentialization*).
+**Phần 3 (Lecture 4): Làm thế nào kiểm tra một chương trình đa luồng?** Khi nhiều thread chạy song song, không gian state nổ tung. Bạn sẽ học các kỹ thuật giảm không gian này (*context-bounded analysis*, *lazy exploration*, *schedule recording*) và cách dịch chương trình đa luồng về chương trình tuần tự để dùng lại tools của Phần 2 (*sequentialization*).
 
-**Cụm 4 (Lecture 5): Khi không chứng minh được, làm thế nào tìm bug bằng cách chạy?** Đây là phần *dynamic analysis*: coverage criteria, runtime monitoring với LTL/Büchi automata, và đặc biệt là *fuzzing* (mutation-based với AFL, grammar-based, whitebox với dynamic symbolic execution). Cuối cùng bạn sẽ thấy hai họ kỹ thuật ở Cụm 2 và Cụm 4 **gặp nhau** khi BMC được dùng để **sinh test case** thay vì để chứng minh.
+**Phần 4 (Lecture 5): Khi không chứng minh được, làm thế nào tìm bug bằng cách chạy?** Đây là phần *dynamic analysis*: coverage criteria, runtime monitoring với LTL/Büchi automata, và đặc biệt là *fuzzing* (mutation-based với AFL, grammar-based, whitebox với dynamic symbolic execution). Cuối cùng bạn sẽ thấy hai họ kỹ thuật ở Phần 2 và Phần 4 **gặp nhau** khi BMC được dùng để **sinh test case** thay vì để chứng minh.
 
 ## Triết lý xuyên suốt
 
@@ -41,11 +41,11 @@ Câu này tóm gọn lý do tại sao chúng ta cần verification chứ không 
 1. **Làm thế nào để CHỨNG MINH một chương trình không có một lớp lỗi nào đó?** (Lecture 3-4)
 2. **Khi chưa chứng minh được, làm thế nào để TÌM PHẢN VÍ DỤ một cách có hệ thống?** (Lecture 5)
 
-Hai họ kỹ thuật trả lời hai câu hỏi này không tách rời nhau. Một bounded model checker khi gặp counterexample thực ra đã trả lời cả hai cùng lúc: nó vừa chứng minh "an toàn trong bound $k$", vừa cho counterexample khi bug nằm trong bound đó. Bạn sẽ thấy sự thống nhất này dần dần khi đi qua từng cụm.
+Hai họ kỹ thuật trả lời hai câu hỏi này không tách rời nhau. Một bounded model checker khi gặp counterexample thực ra đã trả lời cả hai cùng lúc: nó vừa chứng minh "an toàn trong bound $k$", vừa cho counterexample khi bug nằm trong bound đó. Bạn sẽ thấy sự thống nhất này dần dần khi đi qua từng phần.
 
 ## Cách đọc tài liệu
 
-Sidebar bên trái sắp xếp các bài theo thứ tự logic. Bạn nên đọc tuần tự vì mỗi cụm xây dựng trên cụm trước. Nếu cần tra cứu nhanh một thuật ngữ, hãy dùng thanh tìm kiếm phía trên hoặc trang [Glossary](./resources/glossary).
+Sidebar bên trái sắp xếp các bài theo thứ tự logic. Bạn nên đọc tuần tự vì mỗi phần xây dựng trên phần trước. Nếu cần tra cứu nhanh một thuật ngữ, hãy dùng thanh tìm kiếm phía trên hoặc trang [Glossary](./resources/glossary).
 
 Mỗi bài đều có cùng cấu trúc để bạn dễ định hướng:
 

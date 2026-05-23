@@ -459,4 +459,4 @@ Budget: \$500-2000/month tool + \$20-40K one-time pen test.
 
 ---
 
-**Kết thúc Cụm 7 (Topics Bổ sung).** Bạn đã có toàn bộ kiến thức: lý thuyết (Lec 1-5) + tư vấn (Lec 6) + công cụ + framework + process (Lec 7). Quay về [trang chính](/docs/intro) hoặc tra cứu [Glossary](../resources/glossary).
+**Kết thúc Phần 7 (Topics Bổ sung).** Bạn đã có toàn bộ kiến thức: lý thuyết (Lec 1-5) + tư vấn (Lec 6) + công cụ + framework + process (Lec 7). Quay về [trang chính](/docs/intro) hoặc tra cứu [Glossary](../resources/glossary).

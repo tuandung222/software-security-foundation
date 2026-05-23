@@ -312,4 +312,4 @@ Trong thực tế, $K$ trong CBA thường nhỏ (2-5), không cần worry.
 
 ---
 
-**Kết thúc Cụm 3 (Lecture 4).** Bạn đã hiểu các kỹ thuật cốt lõi để xử lý concurrency: bit-blasting, CBA, lazy exploration, schedule recording, sequentialization. Chuyển sang [Lecture 5: Dynamic Analysis (Testing, Monitoring, Fuzzing)](../04-dynamic-analysis/01-overview).
+**Kết thúc Phần 3 (Lecture 4).** Bạn đã hiểu các kỹ thuật cốt lõi để xử lý concurrency: bit-blasting, CBA, lazy exploration, schedule recording, sequentialization. Chuyển sang [Lecture 5: Dynamic Analysis (Testing, Monitoring, Fuzzing)](../04-dynamic-analysis/01-overview).

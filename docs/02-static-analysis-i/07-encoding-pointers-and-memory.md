@@ -372,4 +372,4 @@ CBMC và ESBMC có `--memory-leak-check` nhưng chậm hơn nhiều và đôi kh
 
 ---
 
-**Kết thúc Cụm 2 (Lecture 3).** Bạn đã hiểu sâu cách BMC + SMT thực sự hoạt động bên trong. Chuyển sang [Lecture 4: Static Analysis II (Concurrency)](../03-static-analysis-ii/01-overview) để xem cách xử lý chương trình đa luồng.
+**Kết thúc Phần 2 (Lecture 3).** Bạn đã hiểu sâu cách BMC + SMT thực sự hoạt động bên trong. Chuyển sang [Lecture 4: Static Analysis II (Concurrency)](../03-static-analysis-ii/01-overview) để xem cách xử lý chương trình đa luồng.

@@ -240,7 +240,7 @@ Trong chương trình thực, "state" có thể là tổ hợp giá trị mọi 
 - **State space** của chương trình là đồ thị; verify là khám phá đồ thị tìm bad state.
 - **BFS** tìm counterexample ngắn nhất nhưng tốn RAM. **DFS** tiết kiệm RAM nhưng counterexample dài.
 - **State explosion** là vấn đề trung tâm: số state lớn theo cấp số mũ với số biến.
-- **Symbolic representation** (cụm BMC + SMT) là cách giảm state explosion hiệu quả nhất.
+- **Symbolic representation** (phần BMC + SMT) là cách giảm state explosion hiệu quả nhất.
 - **Symbolic execution** là cầu nối: chạy chương trình với input symbolic, tích lũy path constraint, gọi SMT giải.
 
 Trong các bài tiếp theo, ta đi sâu vào hai thành phần của SMT: SAT (bài 3.4) và theory (bài 3.5).

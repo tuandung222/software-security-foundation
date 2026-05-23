@@ -9,11 +9,11 @@ description: Các file PDF kèm theo tài liệu để tra cứu hình ảnh và
 
 Trang này cung cấp các file PDF của tài liệu để bạn tải về đọc offline hoặc in ra.
 
-## PDF gộp theo cụm (bản chính)
+## PDF gộp theo phần (bản chính)
 
-Các file PDF dưới đây gộp toàn bộ nội dung của mỗi cụm bài giảng, có mục lục, sinh tự động từ markdown source. Phù hợp để in và đọc offline.
+Các file PDF dưới đây gộp toàn bộ nội dung của mỗi phần bài giảng, có mục lục, sinh tự động từ markdown source. Phù hợp để in và đọc offline.
 
-| Cụm | Nội dung | File | Kích thước |
+| Phần | Nội dung | File | Kích thước |
 |---|---|---|---|
 | Lecture 1 & 2 | Giới thiệu Software Security, vulnerabilities, formal verification | [lecture-1-2-full.pdf](pathname:///pdfs/lectures/lecture-1-2-full.pdf) | ~245 KB |
 | Lecture 3 | Static Analysis I (BMC + SMT chi tiết) | [lecture-3-full.pdf](pathname:///pdfs/lectures/lecture-3-full.pdf) | ~214 KB |

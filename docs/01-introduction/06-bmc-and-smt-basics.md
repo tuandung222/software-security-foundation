@@ -412,4 +412,4 @@ BMC dịch chương trình thành **một công thức SMT lớn** giống cách
 
 ---
 
-**Kết thúc Cụm 1 (Lecture 1-2).** Bạn đã có nền tảng vocabulary đầy đủ về Software Security, các lớp lỗ hổng phổ biến, khái niệm formal verification, và cách BMC + SMT hoạt động. Chuyển sang [Lecture 3: Static Analysis I (BMC chi tiết)](../02-static-analysis-i/01-overview) để xem từng kỹ thuật được hiện thực ra sao trong các tool hiện đại.
+**Kết thúc Phần 1 (Lecture 1-2).** Bạn đã có nền tảng vocabulary đầy đủ về Software Security, các lớp lỗ hổng phổ biến, khái niệm formal verification, và cách BMC + SMT hoạt động. Chuyển sang [Lecture 3: Static Analysis I (BMC chi tiết)](../02-static-analysis-i/01-overview) để xem từng kỹ thuật được hiện thực ra sao trong các tool hiện đại.

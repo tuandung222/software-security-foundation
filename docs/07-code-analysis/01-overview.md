@@ -7,11 +7,11 @@ description: "Phương pháp đọc và phân tích lại các đoạn code C/C+
 
 # Lecture 8: Phân tích code C/C++ trong tài liệu
 
-> **Tóm tắt một dòng**: Cụm này quay lại từng đoạn code C/C++ xuất hiện trong các cụm trước (Lec 1-5) và các đề bài tập, đọc kỹ từng dòng, chỉ ra cụ thể chỗ sai, giải thích cơ chế lỗi, đề xuất cách viết lại, và minh hoạ cách CBMC/ESBMC bắt được bug nếu có. Mục tiêu: nâng cấp khả năng **đọc code C/C++ kiểu kỹ sư an ninh**, không chỉ kiểu lập trình viên thông thường.
+> **Tóm tắt một dòng**: Phần này quay lại từng đoạn code C/C++ xuất hiện trong các phần trước (Lec 1-5) và các đề bài tập, đọc kỹ từng dòng, chỉ ra cụ thể chỗ sai, giải thích cơ chế lỗi, đề xuất cách viết lại, và minh hoạ cách CBMC/ESBMC bắt được bug nếu có. Mục tiêu: nâng cấp khả năng **đọc code C/C++ kiểu kỹ sư an ninh**, không chỉ kiểu lập trình viên thông thường.
 
 ## Vì sao cần một chương riêng phân tích code?
 
-Trong 7 cụm trước, code xuất hiện rải rác làm minh hoạ cho concept. Người đọc thường tập trung vào concept, lướt qua code. Nhưng:
+Trong 7 phần trước, code xuất hiện rải rác làm minh hoạ cho concept. Người đọc thường tập trung vào concept, lướt qua code. Nhưng:
 
 1. **Bug thật nằm trong code thật**: hiểu concept "buffer overflow" khác xa với việc **đọc đúng** code có buffer overflow và chỉ ra dòng nào sai.
 2. **Code C/C++ trong tài liệu mặc định cô đọng**: nhiều đoạn lược bỏ header, error handling, để focus vào điểm minh hoạ. Người đọc cần học cách **lấp những lỗ hổng này** trong đầu khi review code production.
@@ -72,14 +72,14 @@ Fix phải:
 CBMC/ESBMC trên code mới: chứng minh bug đã fix.
 SAST trên codebase: pattern không lặp lại nơi khác.
 
-## Cấu trúc 5 bài trong cụm này
+## Cấu trúc 5 bài trong phần này
 
 | Bài | Nguồn code phân tích | Số sample | Lớp bug |
 |---|---|---|---|
-| [8.2 Code patterns Cụm 1](./02-code-patterns-cluster-1) | Lec 1-2 (intro, vulnerabilities) | ~10 | Buffer overflow, UAF, integer overflow, format string, race |
-| [8.3 Code patterns Cụm 2](./03-code-patterns-cluster-2) | Lec 3 (BMC, SMT encoding) | ~8 | Bug để demo BMC bắt: array bounds, pointer, float |
-| [8.4 Code patterns Cụm 3](./04-code-patterns-cluster-3) | Lec 4 (concurrency) | ~8 | Data race, atomicity, deadlock, memory model |
-| [8.5 Code patterns Cụm 4](./05-code-patterns-cluster-4) | Lec 5 (testing, fuzzing) | ~6 | Coverage demo, fuzzing target |
+| [8.2 Code patterns Phần 1](./02-code-patterns-cluster-1) | Lec 1-2 (intro, vulnerabilities) | ~10 | Buffer overflow, UAF, integer overflow, format string, race |
+| [8.3 Code patterns Phần 2](./03-code-patterns-cluster-2) | Lec 3 (BMC, SMT encoding) | ~8 | Bug để demo BMC bắt: array bounds, pointer, float |
+| [8.4 Code patterns Phần 3](./04-code-patterns-cluster-3) | Lec 4 (concurrency) | ~8 | Data race, atomicity, deadlock, memory model |
+| [8.5 Code patterns Phần 4](./05-code-patterns-cluster-4) | Lec 5 (testing, fuzzing) | ~6 | Coverage demo, fuzzing target |
 | [8.6 Exercise analysis](./06-exercise-analysis) | Exercise Set 2 (7 bài) | 7 | Mix: memory, integer, struct alignment |
 
 ## Format chung của mỗi sample
@@ -131,7 +131,7 @@ Code trong tài liệu nguồn thường:
 
 Tất cả code đã được tôi reformat để compile được với `gcc -std=c99` hoặc `clang -fsyntax-only`. Code "as-is" trong tài liệu có thể không compile, đó là điểm thứ nhất cần chú ý khi review code published.
 
-## Mục tiêu cuối cụm
+## Mục tiêu cuối phần
 
 Sau khi đọc hết 5 bài, bạn sẽ:
 
@@ -142,4 +142,4 @@ Sau khi đọc hết 5 bài, bạn sẽ:
 
 Đây là kỹ năng **code review formal** cho security.
 
-Sẵn sàng? Bắt đầu với [bài 8.2: Code patterns Cụm 1](./02-code-patterns-cluster-1).
+Sẵn sàng? Bắt đầu với [bài 8.2: Code patterns Phần 1](./02-code-patterns-cluster-1).

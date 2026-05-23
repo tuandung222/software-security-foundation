@@ -1,11 +1,11 @@
 ---
 id: 05-code-patterns-cluster-4
-title: 8.5 Code patterns Cụm 4 (Lec 5 - Testing & Fuzzing)
+title: 8.5 Code patterns Phần 4 (Lec 5 - Testing & Fuzzing)
 sidebar_position: 5
 description: "Phân tích code dùng làm coverage demo, fuzz target, white-box symbolic execution example. Bao gồm cách viết fuzz harness an toàn và CBMC test gen."
 ---
 
-# 8.5 Code patterns Cụm 4 (Lec 5 - Testing và Fuzzing)
+# 8.5 Code patterns Phần 4 (Lec 5 - Testing và Fuzzing)
 
 > **Tóm tắt một dòng**: Code Lec 5 chia 3 nhóm: (1) program nhỏ minh hoạ coverage criteria (statement, branch, MC/DC), (2) fuzz target trông như production function nhưng có bug subtle, (3) symbolic execution example. Bài này đọc lại từng nhóm, comment chi tiết, và viết fuzz harness chuẩn.
 
@@ -512,7 +512,7 @@ cbmc parse_harness.c --pointer-check --bounds-check --memory-leak-check
 
 **Bài học**: parser binary format là **#1 attack surface**. Mỗi field length cần overflow-safe check. Format pattern: `size_t consumed`, tăng dần, compare với `size_remaining`.
 
-## Tóm tắt Cụm 4
+## Tóm tắt Phần 4
 
 | Sample | Topic | Tool |
 |---|---|---|

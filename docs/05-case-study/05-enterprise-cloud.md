@@ -262,4 +262,4 @@ Tool quan trọng nhưng không đủ. CISO thành công là người **partner 
 
 ---
 
-**Kết thúc Cụm 5 (Case Study).** Bạn đã có 4 framework để tư vấn 4 domain phổ biến: Web/SaaS, Fintech, IoT, Enterprise. Combine với kỹ thuật đã học ở Lec 1-5, bạn đủ kiến thức để approach hầu hết security project trong industry.
+**Kết thúc Phần 5 (Case Study).** Bạn đã có 4 framework để tư vấn 4 domain phổ biến: Web/SaaS, Fintech, IoT, Enterprise. Combine với kỹ thuật đã học ở Lec 1-5, bạn đủ kiến thức để approach hầu hết security project trong industry.

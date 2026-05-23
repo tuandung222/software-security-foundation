@@ -103,20 +103,20 @@ Khi hoàn thành tài liệu, bạn sẽ có khả năng:
 5. **Liên kết** kết quả V&V với phân tích rủi ro để bảo đảm hệ thống vẫn resilient khi bị tấn công.
 6. **Đánh giá** trade-off giữa security với performance, usability và cost.
 
-Những mục tiêu này tương ứng từng phần với bốn cụm bài giảng. Cụm 1 lo phần (1), (2), (3). Cụm 2-4 lo phần (4), (5). Phần (6) là chủ đề xuyên suốt được nhắc trong mọi cụm.
+Những mục tiêu này tương ứng từng phần với bốn phần bài giảng. Phần 1 lo phần (1), (2), (3). Phần 2-4 lo phần (4), (5). Phần (6) là chủ đề xuyên suốt được nhắc trong mọi phần.
 
 ## Lộ trình tiếp theo
 
-Bốn cụm bài giảng được sắp xếp theo độ phức tạp tăng dần và phụ thuộc lẫn nhau:
+Bốn phần bài giảng được sắp xếp theo độ phức tạp tăng dần và phụ thuộc lẫn nhau:
 
-| Cụm | Trọng tâm | Đường dẫn |
+| Phần | Trọng tâm | Đường dẫn |
 |---|---|---|
-| Lecture 1-2 | Khái niệm, vulnerabilities, intro formal verification | [Cụm này](./01-overview) |
+| Lecture 1-2 | Khái niệm, vulnerabilities, intro formal verification | [Phần này](./01-overview) |
 | Lecture 3 | Static analysis cho chương trình tuần tự (BMC, SAT, SMT) | [Lecture 3](../02-static-analysis-i/01-overview) |
 | Lecture 4 | Static analysis cho chương trình đa luồng | [Lecture 4](../03-static-analysis-ii/01-overview) |
 | Lecture 5 | Dynamic analysis: testing, monitoring, fuzzing | [Lecture 5](../04-dynamic-analysis/01-overview) |
 
-Nếu bạn muốn nhảy ngay vào kỹ thuật, có thể bắt đầu từ Lecture 3. Nhưng nếu chưa quen với khái niệm "property" hay "soundness", nên đọc trước [bài 2.1 (Giới thiệu Formal Verification)](./05-formal-verification-intro) và [bài 2.2 (BMC và SMT basics)](./06-bmc-and-smt-basics) trong cụm này để nắm vocabulary chung.
+Nếu bạn muốn nhảy ngay vào kỹ thuật, có thể bắt đầu từ Lecture 3. Nhưng nếu chưa quen với khái niệm "property" hay "soundness", nên đọc trước [bài 2.1 (Giới thiệu Formal Verification)](./05-formal-verification-intro) và [bài 2.2 (BMC và SMT basics)](./06-bmc-and-smt-basics) trong phần này để nắm vocabulary chung.
 
 ## Tài liệu tham khảo
 

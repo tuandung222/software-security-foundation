@@ -2,7 +2,7 @@
 id: 01-overview
 title: 5.1 Tổng quan Lecture 5
 sidebar_position: 1
-description: Giới thiệu cụm Dynamic Analysis với hai họ kỹ thuật chính (monitoring và fuzzing), khi nào dùng dynamic vs static, và cầu nối ngược về BMC.
+description: Giới thiệu phần Dynamic Analysis với hai họ kỹ thuật chính (monitoring và fuzzing), khi nào dùng dynamic vs static, và cầu nối ngược về BMC.
 ---
 
 # Lecture 5: Dynamic Analysis (Testing, Monitoring, Fuzzing)
@@ -58,7 +58,7 @@ Cuối cùng, ta dùng BMC **ngược**: thay vì chứng minh property holds, d
 
 Ý tưởng này gắn kết Lec 3-4 với Lec 5: cùng một tool BMC, dùng theo hai cách khác nhau cho hai mục tiêu khác nhau.
 
-## Lộ trình cụm
+## Lộ trình phần
 
 | Bài | Chủ đề | Vì sao cần |
 |---|---|---|
@@ -73,7 +73,7 @@ Cuối cùng, ta dùng BMC **ngược**: thay vì chứng minh property holds, d
 
 ## Trước khi bắt đầu
 
-Cụm này giả định bạn đã quen với:
+Phần này giả định bạn đã quen với:
 
 - Khái niệm property, assertion ([bài 2.1](../01-introduction/05-formal-verification-intro)).
 - Khái niệm cơ bản BMC, SMT, counterexample ([bài 2.2](../01-introduction/06-bmc-and-smt-basics)).

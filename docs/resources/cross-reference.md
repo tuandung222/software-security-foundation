@@ -2,7 +2,7 @@
 id: cross-reference
 title: Cross-reference (bản đồ phụ thuộc)
 sidebar_position: 5
-description: "Bảng ánh xạ bài → bài liên quan, giúp bạn điều hướng theo nội dung thay vì theo tuần tự cụm."
+description: "Bảng ánh xạ bài → bài liên quan, giúp bạn điều hướng theo nội dung thay vì theo tuần tự phần."
 ---
 
 # Cross-reference: bản đồ phụ thuộc giữa các bài
@@ -19,7 +19,7 @@ Bài liệt kê theo thứ tự xuất hiện trong sidebar.
 
 ## Lecture 1 & 2: Foundation
 
-Cụm đầu gồm 2 lecture gốc: **Lec 1** (1.1-1.4) trang bị vocabulary + vulnerabilities; **Lec 2** (2.1-2.2) giới thiệu formal verification + BMC làm cầu nối sang Lec 3-4.
+Phần đầu gồm 2 lecture gốc: **Lec 1** (1.1-1.4) trang bị vocabulary + vulnerabilities; **Lec 2** (2.1-2.2) giới thiệu formal verification + BMC làm cầu nối sang Lec 3-4.
 
 | Bài | Prerequisites | Used by | Glossary terms |
 |---|---|---|---|
@@ -159,7 +159,7 @@ Lec 1-2 → 3 → 4 → 5 → 6 → 7. Đầy đủ, ~30-40 giờ đọc + thự
 
 | Resource | Mô tả |
 |---|---|
-| [PDF Downloads](./pdfs) | 6 PDF gộp cho 6 cụm + slide gốc |
+| [PDF Downloads](./pdfs) | 6 PDF gộp cho 6 phần + slide gốc |
 | [Glossary 200+ thuật ngữ](./glossary) | Tra cứu Anh-Việt |
 | [Exam Checklist](./exam-checklist) | Self-test 90+ điểm kiến thức |
 | [Appendix C basics](./appendix-c-basics) | Pointer, stack, heap, UB cho người chưa quen C |

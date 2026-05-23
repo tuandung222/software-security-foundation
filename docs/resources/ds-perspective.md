@@ -221,11 +221,11 @@ Nếu bạn là DS scientist đọc tài liệu này:
 
 ### Strategy học hiệu quả
 
-1. **Đọc cụm 1 (Lec 1-2) chậm**, làm bài tập [Exercise Set 1](../exercises/) để build C intuition.
-2. **Cụm 2-3 (Lec 3-4) đọc nhanh**: SAT/SMT/abstract interp bạn đã có anchor.
-3. **Cụm 4 (Lec 5) dùng analogy fuzzing-as-adversarial** để hiểu nhanh.
-4. **Cụm 5 (Lec 6) practical**, không cần background sâu, đọc bất cứ lúc nào.
-5. **Cụm 7 (Topics Bổ sung) → đặc biệt 7.5 Secure SDLC** vì có direct MLOps analogy.
+1. **Đọc phần 1 (Lec 1-2) chậm**, làm bài tập [Exercise Set 1](../exercises/) để build C intuition.
+2. **Phần 2-3 (Lec 3-4) đọc nhanh**: SAT/SMT/abstract interp bạn đã có anchor.
+3. **Phần 4 (Lec 5) dùng analogy fuzzing-as-adversarial** để hiểu nhanh.
+4. **Phần 5 (Lec 6) practical**, không cần background sâu, đọc bất cứ lúc nào.
+5. **Phần 7 (Topics Bổ sung) → đặc biệt 7.5 Secure SDLC** vì có direct MLOps analogy.
 
 ## Reverse: software security → ML benefit gì?
 

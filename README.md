@@ -29,13 +29,13 @@
 
 Repo này là một bộ tài liệu giảng dạy Tiếng Việt về **Software Security** ở mức nền tảng đại học. Mục tiêu: giúp người học hiểu vì sao phần mềm dễ bị tấn công, các kỹ thuật phát hiện lỗi tự động (Bounded Model Checking, SMT, Fuzzing, Dynamic Symbolic Execution), và cách áp dụng vào pipeline phát triển thực tế.
 
-Tài liệu được viết theo phong cách "lecturer": dẫn dắt trực giác trước, hình thức hoá sau, kèm ví dụ C/C++ chạy được và sơ đồ Mermaid minh hoạ. Trình bày bằng Docusaurus 3, hỗ trợ KaTeX cho công thức toán, render Mermaid, và xuất PDF gộp theo cụm.
+Tài liệu được viết theo phong cách "lecturer": dẫn dắt trực giác trước, hình thức hoá sau, kèm ví dụ C/C++ chạy được và sơ đồ Mermaid minh hoạ. Trình bày bằng Docusaurus 3, hỗ trợ KaTeX cho công thức toán, render Mermaid, và xuất PDF gộp theo phần.
 
 ## Nội dung khoá học
 
-Tám cụm bài giảng phủ toàn bộ pipeline phát hiện lỗi phần mềm, từ định nghĩa cơ bản tới phân tích code ở mức production.
+Tám phần bài giảng phủ toàn bộ pipeline phát hiện lỗi phần mềm, từ định nghĩa cơ bản tới phân tích code ở mức production.
 
-| Cụm | Chủ đề | Trọng tâm |
+| Phần | Chủ đề | Trọng tâm |
 |---|---|---|
 | **1. Giới thiệu** | Software Security, CIA triad, vulnerabilities catalog, web vulns | Build vocabulary, threat model |
 | **2. Formal Verification** | Intro formal methods, BMC + SMT basics | Cầu nối lý thuyết → thực hành |
@@ -58,15 +58,15 @@ Tài nguyên tra cứu:
 
 ```
 .
-├── docs/                       # Markdown nguồn (theo cụm)
+├── docs/                       # Markdown nguồn (theo phần)
 │   ├── intro.md
-│   ├── 01-introduction/        # Cụm 1 + 2
-│   ├── 02-static-analysis-i/   # Cụm 3
-│   ├── 03-static-analysis-ii/  # Cụm 4
-│   ├── 04-dynamic-analysis/    # Cụm 5
-│   ├── 05-case-study/          # Cụm 6
-│   ├── 06-additional-topics/   # Cụm 7
-│   ├── 07-code-analysis/       # Cụm 8
+│   ├── 01-introduction/        # Phần 1 + 2
+│   ├── 02-static-analysis-i/   # Phần 3
+│   ├── 03-static-analysis-ii/  # Phần 4
+│   ├── 04-dynamic-analysis/    # Phần 5
+│   ├── 05-case-study/          # Phần 6
+│   ├── 06-additional-topics/   # Phần 7
+│   ├── 07-code-analysis/       # Phần 8
 │   ├── exercises/              # Bài tập có lời giải
 │   └── resources/              # Glossary, cross-ref, PDF index
 │

@@ -1,11 +1,11 @@
 ---
 id: 03-code-patterns-cluster-2
-title: 8.3 Code patterns Cụm 2 (Lec 3 - BMC encoding)
+title: 8.3 Code patterns Phần 2 (Lec 3 - BMC encoding)
 sidebar_position: 3
 description: "Phân tích các đoạn code C trong Lec 3 dùng làm input cho BMC: array bounds, pointer arithmetic, float, encoding integer/pointer/memory."
 ---
 
-# 8.3 Code patterns Cụm 2 (Lec 3 - BMC encoding)
+# 8.3 Code patterns Phần 2 (Lec 3 - BMC encoding)
 
 > **Tóm tắt một dòng**: Code trong Lec 3 dùng làm **input để demo BMC encoding**. Mỗi sample là chương trình nhỏ có bug subtle mà BMC bắt được nhưng test ngẫu nhiên có thể miss. Phân tích lại để hiểu vì sao BMC quan trọng và cách encode chính xác.
 
@@ -574,7 +574,7 @@ int d = a % b;
 
 **Bài học**: division by zero và `INT_MIN / -1` là 2 case ít người nhớ. BMC bắt cả 2.
 
-## Tóm tắt Cụm 2
+## Tóm tắt Phần 2
 
 | Sample | Lớp bug | Tool detect |
 |---|---|---|
@@ -604,4 +604,4 @@ Code production thường khó verify trực tiếp. Tạo "**verification harne
 
 ---
 
-**Tiếp theo**: [8.4 Code patterns Cụm 3 (concurrency)](./04-code-patterns-cluster-3)
+**Tiếp theo**: [8.4 Code patterns Phần 3 (concurrency)](./04-code-patterns-cluster-3)

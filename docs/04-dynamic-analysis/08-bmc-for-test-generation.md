@@ -329,4 +329,4 @@ BMC-for-test-gen tương tự **active learning với query strategy "maximum di
 
 ---
 
-**Kết thúc Cụm 4 (Lecture 5).** Bạn đã hoàn thành toàn bộ chương trình kỹ thuật! Từ khái niệm cơ bản Software Security (Cụm 1), tới BMC + SMT cho sequential (Cụm 2), concurrency (Cụm 3), dynamic analysis với fuzzing (Cụm 4). Để thấy các kỹ thuật này áp dụng vào tư vấn dự án thực tế, đọc tiếp [Cụm 5: Case Studies](../05-case-study/01-overview).
+**Kết thúc Phần 4 (Lecture 5).** Bạn đã hoàn thành toàn bộ chương trình kỹ thuật! Từ khái niệm cơ bản Software Security (Phần 1), tới BMC + SMT cho sequential (Phần 2), concurrency (Phần 3), dynamic analysis với fuzzing (Phần 4). Để thấy các kỹ thuật này áp dụng vào tư vấn dự án thực tế, đọc tiếp [Phần 5: Case Studies](../05-case-study/01-overview).

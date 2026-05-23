@@ -2,11 +2,11 @@
 
 Thư mục này chứa toàn bộ file PDF của tài liệu để bạn dễ download/copy. GitHub render được link trực tiếp tới file PDF.
 
-## PDF gộp theo cụm (bản chính, đọc text)
+## PDF gộp theo phần (bản chính, đọc text)
 
 Sinh tự động từ markdown source qua `pandoc + xelatex`. Có mục lục, font Helvetica, formatted A4, dễ in.
 
-| File | Cụm | Kích thước |
+| File | Phần | Kích thước |
 |---|---|---|
 | [`lecture-1-2-full.pdf`](./lecture-1-2-full.pdf) | Lecture 1 & 2: Giới thiệu Software Security | ~245 KB |
 | [`lecture-3-full.pdf`](./lecture-3-full.pdf) | Lecture 3: Static Analysis I (BMC + SMT) | ~214 KB |

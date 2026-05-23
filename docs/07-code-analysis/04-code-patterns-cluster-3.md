@@ -1,11 +1,11 @@
 ---
 id: 04-code-patterns-cluster-3
-title: 8.4 Code patterns Cụm 3 (Lec 4 - Concurrency)
+title: 8.4 Code patterns Phần 3 (Lec 4 - Concurrency)
 sidebar_position: 4
 description: "Phân tích các đoạn code pthread/C++ thread trong Lec 4: data race, atomicity, deadlock, memory model, lock-free patterns."
 ---
 
-# 8.4 Code patterns Cụm 3 (Lec 4 - Concurrency)
+# 8.4 Code patterns Phần 3 (Lec 4 - Concurrency)
 
 > **Tóm tắt một dòng**: Code Lec 4 là các program đa luồng minh hoạ class lỗi concurrency: data race, atomicity violation, deadlock, memory model. Khó debug bằng test thông thường vì bug **non-deterministic**, nhưng CBMC `--pthread` khám phá interleaving exhaustively trong bound.
 
@@ -658,7 +658,7 @@ struct Counters {
 
 **Bài học**: false sharing là performance bug subtle. Pattern: thread-private counter padding tránh sharing. Quan trọng cho high-throughput data path.
 
-## Tóm tắt Cụm 3
+## Tóm tắt Phần 3
 
 | Sample | Bug | Tool detect |
 |---|---|---|
@@ -689,4 +689,4 @@ Sau khi đọc, các quy tắc cốt lõi:
 
 ---
 
-**Tiếp theo**: [8.5 Code patterns Cụm 4 (testing và fuzzing)](./05-code-patterns-cluster-4)
+**Tiếp theo**: [8.5 Code patterns Phần 4 (testing và fuzzing)](./05-code-patterns-cluster-4)

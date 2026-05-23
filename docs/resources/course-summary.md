@@ -2,12 +2,12 @@
 id: course-summary
 title: Tóm tắt toàn khoá
 sidebar_position: 7
-description: "Phiên bản tóm tắt cô đọng toàn bộ 8 cụm bài giảng. Đọc trong 2-3 giờ để quick-review: vocabulary, công thức, common pitfall, mỗi cụm có 5-10 điểm phải nhớ."
+description: "Phiên bản tóm tắt cô đọng toàn bộ 8 phần bài giảng. Đọc trong 2-3 giờ để quick-review: vocabulary, công thức, common pitfall, mỗi phần có 5-10 điểm phải nhớ."
 ---
 
 # Tóm tắt toàn khoá Software Security
 
-> **Hướng dẫn dùng**: tài liệu này tóm tắt **toàn bộ 8 cụm bài giảng** trong 1 file đọc thẳng, phù hợp cho **quick-review** hay **on-call cheat sheet**. Ưu tiên các điểm cốt lõi: định nghĩa chuẩn, công thức ngắn, algorithm step-by-step, common pitfall. Mỗi section dài 5-10 phút đọc. Tổng thời gian: 2-3 giờ. Sau khi đọc, làm [Exercise Set 2](../exercises/exercise-set-2) và xem [Cross-reference](./cross-reference) để fill gap.
+> **Hướng dẫn dùng**: tài liệu này tóm tắt **toàn bộ 8 phần bài giảng** trong 1 file đọc thẳng, phù hợp cho **quick-review** hay **on-call cheat sheet**. Ưu tiên các điểm cốt lõi: định nghĩa chuẩn, công thức ngắn, algorithm step-by-step, common pitfall. Mỗi section dài 5-10 phút đọc. Tổng thời gian: 2-3 giờ. Sau khi đọc, làm [Exercise Set 2](../exercises/exercise-set-2) và xem [Cross-reference](./cross-reference) để fill gap.
 
 > **Đọc nhanh**: chỉ cần [Cheat sheet 1 trang](#cheat-sheet-1-trang) và [10 common pitfall](#10-common-pitfall). Đủ cho code review nhanh hoặc interview prep.
 
@@ -560,13 +560,13 @@ int main(void) {
 
 ### 39 code pattern tóm tắt
 
-**Cụm 1 (Vulnerabilities)**: gets(), NULL deref, double free, UAF, integer overflow, format string, race, TOCTOU, signedness, off-by-one.
+**Phần 1 (Vulnerabilities)**: gets(), NULL deref, double free, UAF, integer overflow, format string, race, TOCTOU, signedness, off-by-one.
 
-**Cụm 2 (BMC encoding)**: array bounds nondet, pointer arith OOB, float compare, NaN, SSA, array alias, pointer alias, integer division by zero / INT_MIN/-1.
+**Phần 2 (BMC encoding)**: array bounds nondet, pointer arith OOB, float compare, NaN, SSA, array alias, pointer alias, integer division by zero / INT_MIN/-1.
 
-**Cụm 3 (Concurrency)**: race n++, atomicity withdraw, deadlock, lost wakeup, TSO Dekker, ABA, double-checked locking, false sharing.
+**Phần 3 (Concurrency)**: race n++, atomicity withdraw, deadlock, lost wakeup, TSO Dekker, ABA, double-checked locking, false sharing.
 
-**Cụm 4 (Testing)**: coverage demo, MC/DC challenge, fuzz target naïve, DSE magic constant, BMC test gen, parser fuzz.
+**Phần 4 (Testing)**: coverage demo, MC/DC challenge, fuzz target naïve, DSE magic constant, BMC test gen, parser fuzz.
 
 **Exercise Set 2 (7 bài, CWE mapping)**:
 | Bài | CWE | Tool |
@@ -785,7 +785,7 @@ else printf("FAIL");
 
 ## Lời cuối
 
-Tài liệu summarize này **không thay thế** việc đọc chi tiết mỗi bài. Nó là **cây xương sống** để bạn nắm bird-eye view và quick-recall các điểm chính. Khi gặp câu hỏi không trả lời được, **quay lại bài chi tiết** trong 8 cụm, đọc kỹ section liên quan.
+Tài liệu summarize này **không thay thế** việc đọc chi tiết mỗi bài. Nó là **cây xương sống** để bạn nắm bird-eye view và quick-recall các điểm chính. Khi gặp câu hỏi không trả lời được, **quay lại bài chi tiết** trong 8 phần, đọc kỹ section liên quan.
 
 Trên thực tế công việc, **thực hành đọc code + chạy tool** đáng giá hơn ghi nhớ định nghĩa. Sau khi đọc xong tài liệu này, hãy:
 1. Clone 1 dự án open source C/C++.

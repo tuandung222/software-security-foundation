@@ -24,7 +24,7 @@ function HomepageHeader(): ReactNode {
           <Link
             className={`button button--secondary button--lg ${styles.heroButton}`}
             to="/docs/01-introduction/01-overview">
-            Vào Cụm 1
+            Vào Phần 1
           </Link>
         </div>
       </div>
@@ -60,7 +60,7 @@ function LectureGrid(): ReactNode {
     <section className={styles.gridSection}>
       <div className="container">
         <Heading as="h2" className={styles.sectionTitle}>
-          Bốn cụm bài giảng
+          Bảy phần bài giảng
         </Heading>
         <p className={styles.sectionSubtitle}>
           Lộ trình từ khái niệm cơ bản tới các kỹ thuật verification và fuzzing hiện đại.

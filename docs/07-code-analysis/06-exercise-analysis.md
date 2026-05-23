@@ -599,14 +599,14 @@ jobs:
 
 4 job song song, chạy ~5 phút. Block PR nếu fail. Catch ~95% bug class trong 7 bài tập trên.
 
-## Tóm tắt cụm 8 (Code Analysis)
+## Tóm tắt phần 8 (Code Analysis)
 
-Sau khi đọc **5 bài** trong cụm này, bạn đã review:
+Sau khi đọc **5 bài** trong phần này, bạn đã review:
 
-- **10 sample Cụm 1** (vulnerabilities catalog).
-- **8 sample Cụm 2** (BMC encoding).
-- **8 sample Cụm 3** (concurrency).
-- **6 sample Cụm 4** (testing/fuzzing).
+- **10 sample Phần 1** (vulnerabilities catalog).
+- **8 sample Phần 2** (BMC encoding).
+- **8 sample Phần 3** (concurrency).
+- **6 sample Phần 4** (testing/fuzzing).
 - **7 bài exercise** (CWE categorization).
 
 Tổng cộng **39 code pattern** với analysis chi tiết, fix gợi ý, tool verification. Bạn giờ có:
@@ -621,4 +621,4 @@ Tổng cộng **39 code pattern** với analysis chi tiết, fix gợi ý, tool 
 
 ---
 
-**Kết thúc Cụm 8 (Code Analysis).** Bạn đã hoàn thành toàn bộ curriculum: 7 cụm lý thuyết + 1 cụm phân tích code thực hành. Quay về [trang chính](/docs/intro) hoặc xem [Cross-reference](../resources/cross-reference) để điều hướng nâng cao.
+**Kết thúc Phần 8 (Code Analysis).** Bạn đã hoàn thành toàn bộ curriculum: 7 phần lý thuyết + 1 phần phân tích code thực hành. Quay về [trang chính](/docs/intro) hoặc xem [Cross-reference](../resources/cross-reference) để điều hướng nâng cao.
